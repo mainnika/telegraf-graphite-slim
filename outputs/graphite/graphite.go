@@ -9,10 +9,10 @@ import (
 	"net"
 	"time"
 
-	"github.com/influxdata/telegraf"
-	tlsint "github.com/influxdata/telegraf/internal/tls"
-	"github.com/influxdata/telegraf/outputs"
-	"github.com/influxdata/telegraf/serializers"
+	"github.com/mainnika/telegraf-graphite-slim"
+	tlsint "github.com/mainnika/telegraf-graphite-slim/internal/tls"
+	"github.com/mainnika/telegraf-graphite-slim/outputs"
+	"github.com/mainnika/telegraf-graphite-slim/serializers"
 )
 
 type Graphite struct {

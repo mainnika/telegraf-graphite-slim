@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/influxdata/telegraf"
+	"github.com/mainnika/telegraf-graphite-slim"
 
-	"github.com/influxdata/telegraf/serializers/graphite"
+	"github.com/mainnika/telegraf-graphite-slim/serializers/graphite"
 )
 
 // SerializerOutput is an interface for output plugins that are able to

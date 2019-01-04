@@ -6,8 +6,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/influxdata/telegraf"
-	"github.com/influxdata/telegraf/metric"
+	"github.com/mainnika/telegraf-graphite-slim"
+	"github.com/mainnika/telegraf-graphite-slim/metric"
 )
 
 var localhost = "localhost"

@@ -1,4 +1,4 @@
-module github.com/influxdata/telegraf
+module github.com/mainnika/telegraf-graphite-slim
 
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
