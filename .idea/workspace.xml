@@ -1,0 +1,1302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e0911abf-3275-4e88-9465-a4edd9f5e2c2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.circleci/config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/Bug_report.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/Feature_request.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/PULL_REQUEST_TEMPLATE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CONTRIBUTING.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Godeps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gopkg.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gopkg.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/accumulator.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/accumulator_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/agent.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/agent_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/tick.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aggregator.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appveyor.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/telegraf/telegraf.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/AGGREGATORS.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/AGGREGATORS_AND_PROCESSORS.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/CONFIGURATION.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/DATA_FORMATS_INPUT.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/DATA_FORMATS_OUTPUT.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/FAQ.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/INPUTS.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/LICENSE_OF_DEPENDENCIES.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/METRICS.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/OUTPUTS.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/PROCESSORS.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/PROFILING.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/TEMPLATE_PATTERN.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/WINDOWS_SERVICE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/etc/logrotate.d/telegraf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/etc/telegraf.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/etc/telegraf_windows.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/filter/filter.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/filter/filter_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/config/aws/credentials.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/config/config.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/config/config_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/config/testdata/single_plugin.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/config/testdata/single_plugin_env_vars.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/config/testdata/subconfig/..4984_10_04_08_28_06.119/invalid-config.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/config/testdata/subconfig/exec.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/config/testdata/subconfig/memcached.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/config/testdata/subconfig/procstat.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/config/testdata/telegraf-agent.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/globpath/globpath.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/globpath/globpath_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/globpath/testdata/log1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/globpath/testdata/log2.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/globpath/testdata/nested1/nested2/nested.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/globpath/testdata/test.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/internal.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/internal_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/limiter/limiter.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/models/buffer.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/models/buffer_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/models/filter.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/models/filter_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/models/makemetric.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/models/running_aggregator.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/models/running_aggregator_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/models/running_input.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/models/running_input_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/models/running_output.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/models/running_output_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/models/running_processor.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/models/running_processor_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/templating/engine.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/templating/matcher.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/templating/node.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/templating/template.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/usage.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/usage_windows.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/logger.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/logger_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/aggregators/all/all.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/aggregators/basicstats/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/aggregators/basicstats/basicstats.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/aggregators/basicstats/basicstats_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/aggregators/histogram/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/aggregators/histogram/histogram.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/aggregators/histogram/histogram_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/aggregators/minmax/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/aggregators/minmax/minmax.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/aggregators/minmax/minmax_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/aggregators/registry.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/aggregators/valuecounter/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/aggregators/valuecounter/valuecounter.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/aggregators/valuecounter/valuecounter_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/EXAMPLE_README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/activemq/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/activemq/activemq.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/activemq/activemq_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/aerospike/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/aerospike/aerospike.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/aerospike/aerospike_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/all/all.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/amqp_consumer/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/amqp_consumer/amqp_consumer.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/apache/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/apache/apache.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/apache/apache_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/aurora/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/aurora/aurora.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/aurora/aurora_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/bcache/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/bcache/bcache.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/bcache/bcache_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/beanstalkd/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/beanstalkd/beanstalkd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/beanstalkd/beanstalkd_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/bond/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/bond/bond.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/bond/bond_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/burrow/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/burrow/burrow.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/burrow/burrow_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/burrow/testdata/error.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/burrow/testdata/v3_kafka.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/burrow/testdata/v3_kafka_clustername1_consumer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/burrow/testdata/v3_kafka_clustername1_consumer_group1_lag.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/burrow/testdata/v3_kafka_clustername1_topic.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/burrow/testdata/v3_kafka_clustername1_topic_topicA.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/cassandra/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/cassandra/cassandra.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/cassandra/cassandra_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/ceph/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/ceph/ceph.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/ceph/ceph_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/cgroup/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/cgroup/cgroup.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/cgroup/cgroup_linux.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/cgroup/cgroup_notlinux.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/cgroup/cgroup_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/cgroup/testdata/blkio/blkio.io_serviced" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/cgroup/testdata/blkio/blkio.throttle.io_serviced" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/cgroup/testdata/cpu/cpu.cfs_quota_us" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/cgroup/testdata/cpu/cpuacct.usage_percpu" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/cgroup/testdata/memory/group_1/group_1_1/memory.limit_in_bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/cgroup/testdata/memory/group_1/group_1_1/memory.stat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/cgroup/testdata/memory/group_1/group_1_2/memory.limit_in_bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/cgroup/testdata/memory/group_1/group_1_2/memory.stat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/cgroup/testdata/memory/group_1/memory.kmem.limit_in_bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/cgroup/testdata/memory/group_1/memory.kmem.max_usage_in_bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/cgroup/testdata/memory/group_1/memory.limit_in_bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/cgroup/testdata/memory/group_1/memory.stat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/cgroup/testdata/memory/group_2/group_1_1/memory.limit_in_bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/cgroup/testdata/memory/group_2/group_1_1/memory.stat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/cgroup/testdata/memory/group_2/memory.limit_in_bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/cgroup/testdata/memory/group_2/memory.stat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/cgroup/testdata/memory/memory.empty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/cgroup/testdata/memory/memory.kmem.limit_in_bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/cgroup/testdata/memory/memory.limit_in_bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/cgroup/testdata/memory/memory.max_usage_in_bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/cgroup/testdata/memory/memory.numa_stat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/cgroup/testdata/memory/memory.stat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/cgroup/testdata/memory/memory.usage_in_bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/cgroup/testdata/memory/memory.use_hierarchy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/cgroup/testdata/memory/notify_on_release" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/chrony/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/chrony/chrony.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/chrony/chrony_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/cloud_pubsub/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/cloud_pubsub/pubsub.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/cloud_pubsub/pubsub_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/cloud_pubsub/subscription_gcp.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/cloud_pubsub/subscription_stub.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/cloudwatch/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/cloudwatch/cloudwatch.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/cloudwatch/cloudwatch_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/conntrack/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/conntrack/conntrack.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/conntrack/conntrack_notlinux.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/conntrack/conntrack_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/consul/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/consul/consul.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/consul/consul_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/couchbase/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/couchbase/couchbase.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/couchbase/couchbase_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/couchdb/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/couchdb/couchdb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/couchdb/couchdb_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/couchdb/dev/telegraf.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/cpu/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/cpu/cpu.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/cpu/cpu_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/dcos/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/dcos/client.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/dcos/client_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/dcos/creds.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/dcos/dcos.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/dcos/dcos_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/disk/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/disk/disk.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/disk/disk_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/diskio/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/diskio/diskio.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/diskio/diskio_linux.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/diskio/diskio_linux_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/diskio/diskio_other.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/diskio/diskio_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/disque/disque.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/disque/disque_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/dmcache/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/dmcache/dmcache.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/dmcache/dmcache_linux.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/dmcache/dmcache_linux_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/dmcache/dmcache_notlinux.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/dns_query/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/dns_query/dns_query.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/dns_query/dns_query_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/docker/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/docker/client.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/docker/dev/telegraf.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/docker/docker.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/docker/docker_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/docker/docker_testdata.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/docker/stats_helpers.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/dovecot/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/dovecot/dovecot.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/dovecot/dovecot_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/elasticsearch/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/elasticsearch/elasticsearch.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/elasticsearch/elasticsearch_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/elasticsearch/testdata_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/exec/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/exec/dev/telegraf.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/exec/exec.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/exec/exec_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/fail2ban/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/fail2ban/fail2ban.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/fail2ban/fail2ban_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/fibaro/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/fibaro/fibaro.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/fibaro/fibaro_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/file/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/file/dev/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/file/dev/telegraf.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/file/dev/testfiles/grok_a.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/file/dev/testfiles/json_a.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/file/file.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/file/file_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/filecount/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/filecount/filecount.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/filecount/filecount_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/filecount/testdata/bar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/filecount/testdata/baz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/filecount/testdata/foo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/filecount/testdata/qux" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/filecount/testdata/subdir/nested2/qux" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/filecount/testdata/subdir/quux" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/filecount/testdata/subdir/quuz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/filestat/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/filestat/filestat.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/filestat/filestat_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/filestat/testdata/log1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/filestat/testdata/log2.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/filestat/testdata/test.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/fluentd/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/fluentd/fluentd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/fluentd/fluentd_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/graylog/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/graylog/graylog.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/graylog/graylog_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/haproxy/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/haproxy/haproxy.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/haproxy/haproxy_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/hddtemp/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/hddtemp/go-hddtemp/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/hddtemp/go-hddtemp/hddtemp.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/hddtemp/go-hddtemp/hddtemp_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/hddtemp/hddtemp.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/hddtemp/hddtemp_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/http/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/http/http.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/http/http_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/http_listener_v2/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/http_listener_v2/http_listener_v2.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/http_listener_v2/http_listener_v2_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/http_listener_v2/testdata/testmsgs.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/http_response/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/http_response/http_response.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/http_response/http_response_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/httpjson/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/httpjson/httpjson.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/httpjson/httpjson_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/icinga2/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/icinga2/icinga2.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/icinga2/icinga2_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/influxdb/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/influxdb/influxdb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/influxdb/influxdb_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/influxdb_listener/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/influxdb_listener/bufferpool.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/influxdb_listener/http_listener.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/influxdb_listener/http_listener_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/influxdb_listener/testdata/testmsgs.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/internal/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/internal/internal.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/internal/internal_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/interrupts/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/interrupts/interrupts.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/interrupts/interrupts_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/ipmi_sensor/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/ipmi_sensor/connection.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/ipmi_sensor/connection_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/ipmi_sensor/ipmi.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/ipmi_sensor/ipmi_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/ipset/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/ipset/ipset.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/ipset/ipset_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/iptables/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/iptables/iptables.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/iptables/iptables_nocompile.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/iptables/iptables_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/ipvs/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/ipvs/ipvs.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/ipvs/ipvs_notlinux.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/jenkins/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/jenkins/client.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/jenkins/jenkins.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/jenkins/jenkins_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/jolokia/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/jolokia/jolokia.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/jolokia/jolokia_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/jolokia2/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/jolokia2/client.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/jolokia2/client_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/jolokia2/examples/activemq.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/jolokia2/examples/bitbucket.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/jolokia2/examples/cassandra.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/jolokia2/examples/hadoop-hdfs.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/jolokia2/examples/java.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/jolokia2/examples/jboss.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/jolokia2/examples/kafka.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/jolokia2/examples/tomcat.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/jolokia2/examples/weblogic.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/jolokia2/examples/zookeeper.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/jolokia2/gatherer.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/jolokia2/gatherer_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/jolokia2/jolokia.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/jolokia2/jolokia_agent.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/jolokia2/jolokia_proxy.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/jolokia2/jolokia_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/jolokia2/metric.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/jolokia2/point_builder.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/jti_openconfig_telemetry/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/jti_openconfig_telemetry/auth/authentication_service.pb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/jti_openconfig_telemetry/auth/authentication_service.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/jti_openconfig_telemetry/collection.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/jti_openconfig_telemetry/oc/oc.pb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/jti_openconfig_telemetry/oc/oc.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/jti_openconfig_telemetry/openconfig_telemetry.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/jti_openconfig_telemetry/openconfig_telemetry_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/kafka_consumer/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/kafka_consumer/kafka_consumer.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/kafka_consumer/kafka_consumer_integration_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/kafka_consumer/kafka_consumer_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/kafka_consumer_legacy/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/kafka_consumer_legacy/kafka_consumer_legacy.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/kafka_consumer_legacy/kafka_consumer_legacy_integration_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/kafka_consumer_legacy/kafka_consumer_legacy_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/kapacitor/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/kapacitor/kapacitor.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/kapacitor/kapacitor_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/kernel/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/kernel/kernel.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/kernel/kernel_notlinux.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/kernel/kernel_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/kernel_vmstat/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/kernel_vmstat/kernel_vmstat.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/kernel_vmstat/kernel_vmstat_notlinux.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/kernel_vmstat/kernel_vmstat_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/kibana/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/kibana/kibana.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/kibana/kibana_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/kibana/testdata_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/kubernetes/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/kubernetes/kubernetes.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/kubernetes/kubernetes_metrics.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/kubernetes/kubernetes_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/leofs/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/leofs/leofs.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/leofs/leofs_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/linux_sysctl_fs/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/linux_sysctl_fs/linux_sysctl_fs.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/linux_sysctl_fs/linux_sysctl_fs_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/logparser/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/logparser/dev/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/logparser/dev/telegraf.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/logparser/dev/test.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/logparser/logparser.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/logparser/logparser_solaris.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/logparser/logparser_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/logparser/testdata/test-patterns" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/logparser/testdata/test_a.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/logparser/testdata/test_b.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/lustre2/lustre2.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/lustre2/lustre2_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/mailchimp/chimp_api.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/mailchimp/mailchimp.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/mailchimp/mailchimp_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/mcrouter/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/mcrouter/mcrouter.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/mcrouter/mcrouter_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/mem/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/mem/memory.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/mem/memory_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/memcached/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/memcached/memcached.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/memcached/memcached_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/mesos/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/mesos/mesos.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/mesos/mesos_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/minecraft/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/minecraft/internal/rcon/rcon.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/minecraft/minecraft.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/minecraft/minecraft_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/minecraft/rcon.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/minecraft/rcon_disconnect_error_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/minecraft/rcon_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/mock_Plugin.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/mongodb/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/mongodb/dev/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/mongodb/dev/telegraf.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/mongodb/mongodb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/mongodb/mongodb_data.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/mongodb/mongodb_data_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/mongodb/mongodb_server.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/mongodb/mongodb_server_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/mongodb/mongodb_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/mongodb/mongostat.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/mqtt_consumer/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/mqtt_consumer/mqtt_consumer.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/mqtt_consumer/mqtt_consumer_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/mysql/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/mysql/dev/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/mysql/dev/telegraf.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/mysql/mysql.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/mysql/mysql_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/mysql/v1/mysql.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/nats/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/nats/nats.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/nats/nats_freebsd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/nats/nats_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/nats_consumer/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/nats_consumer/nats_consumer.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/net/NETSTAT_README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/net/NET_README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/net/net.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/net/net_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/net/netstat.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/net_response/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/net_response/net_response.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/net_response/net_response_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/nginx/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/nginx/nginx.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/nginx/nginx_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/nginx_plus/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/nginx_plus/nginx_plus.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/nginx_plus/nginx_plus_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/nginx_plus_api/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/nginx_plus_api/nginx_plus_api.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/nginx_plus_api/nginx_plus_api_metrics.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/nginx_plus_api/nginx_plus_api_metrics_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/nginx_plus_api/nginx_plus_api_types.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/nginx_vts/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/nginx_vts/nginx_vts.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/nginx_vts/nginx_vts_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/nsq/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/nsq/nsq.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/nsq/nsq_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/nsq_consumer/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/nsq_consumer/nsq_consumer.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/nsq_consumer/nsq_consumer_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/nstat/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/nstat/nstat.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/nstat/nstat_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/ntpq/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/ntpq/ntpq.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/ntpq/ntpq_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/nvidia_smi/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/nvidia_smi/nvidia_smi.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/nvidia_smi/nvidia_smi_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/openldap/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/openldap/openldap.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/openldap/openldap_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/opensmtpd/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/opensmtpd/opensmtpd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/opensmtpd/opensmtpd_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/passenger/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/passenger/passenger.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/passenger/passenger_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/pf/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/pf/pf.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/pf/pf_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/pgbouncer/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/pgbouncer/pgbouncer.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/pgbouncer/pgbouncer_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/phpfpm/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/phpfpm/child.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/phpfpm/fcgi.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/phpfpm/fcgi_client.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/phpfpm/fcgi_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/phpfpm/phpfpm.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/phpfpm/phpfpm_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/ping/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/ping/ping.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/ping/ping_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/ping/ping_windows.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/ping/ping_windows_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/postfix/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/postfix/postfix.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/postfix/postfix_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/postfix/stat_ctim.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/postfix/stat_ctimespec.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/postfix/stat_none.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/postgresql/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/postgresql/postgresql.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/postgresql/postgresql_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/postgresql/service.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/postgresql_extensible/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/postgresql_extensible/postgresql_extensible.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/postgresql_extensible/postgresql_extensible_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/powerdns/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/powerdns/powerdns.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/powerdns/powerdns_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/processes/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/processes/processes.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/processes/processes_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/processes/processes_windows.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/procstat/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/procstat/dev/telegraf.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/procstat/native_finder.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/procstat/native_finder_notwindows.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/procstat/native_finder_windows.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/procstat/native_finder_windows_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/procstat/pgrep.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/procstat/process.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/procstat/procstat.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/procstat/procstat_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/procstat/win_service_notwindows.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/procstat/win_service_windows.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/prometheus/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/prometheus/kubernetes.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/prometheus/kubernetes_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/prometheus/parser.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/prometheus/parser_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/prometheus/prometheus.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/prometheus/prometheus_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/puppetagent/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/puppetagent/last_run_summary.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/puppetagent/puppetagent.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/puppetagent/puppetagent_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/rabbitmq/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/rabbitmq/rabbitmq.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/rabbitmq/rabbitmq_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/raindrops/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/raindrops/raindrops.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/raindrops/raindrops_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/redis/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/redis/redis.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/redis/redis_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/registry.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/rethinkdb/rethinkdb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/rethinkdb/rethinkdb_data.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/rethinkdb/rethinkdb_data_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/rethinkdb/rethinkdb_server.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/rethinkdb/rethinkdb_server_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/rethinkdb/rethinkdb_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/riak/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/riak/riak.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/riak/riak_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/salesforce/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/salesforce/salesforce.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/salesforce/salesforce_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/sensors/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/sensors/sensors.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/sensors/sensors_notlinux.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/sensors/sensors_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/smart/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/smart/smart.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/smart/smart_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/snmp/CONFIG-EXAMPLES.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/snmp/DEBUGGING.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/snmp/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/snmp/snmp.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/snmp/snmp_mocks_generate.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/snmp/snmp_mocks_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/snmp/snmp_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/snmp/testdata/snmpd.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/snmp/testdata/test.mib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/snmp_legacy/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/snmp_legacy/snmp_legacy.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/socket_listener/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/socket_listener/socket_listener.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/socket_listener/socket_listener_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/solr/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/solr/solr.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/solr/solr_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/solr/testdata3_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/solr/testdata7_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/solr/testdata_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/sqlserver/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/sqlserver/sqlserver.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/sqlserver/sqlserver_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/statsd/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/statsd/running_stats.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/statsd/running_stats_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/statsd/statsd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/statsd/statsd_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/swap/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/swap/swap.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/swap/swap_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/syslog/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/syslog/commons_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/syslog/framing.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/syslog/framing_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/syslog/nontransparent_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/syslog/octetcounting_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/syslog/rfc5426_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/syslog/syslog.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/syslog/syslog_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/sysstat/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/sysstat/sysstat.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/sysstat/sysstat_interval_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/sysstat/sysstat_notlinux.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/sysstat/sysstat_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/system/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/system/mock_PS.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/system/ps.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/system/system.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/tail/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/tail/tail.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/tail/tail_solaris.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/tail/tail_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/tcp_listener/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/tcp_listener/tcp_listener.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/tcp_listener/tcp_listener_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/teamspeak/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/teamspeak/teamspeak.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/teamspeak/teamspeak_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/temp/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/temp/temp.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/temp/temp_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/tengine/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/tengine/tengine.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/tengine/tengine_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/tomcat/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/tomcat/tomcat.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/tomcat/tomcat_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/trig/trig.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/trig/trig_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/twemproxy/twemproxy.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/twemproxy/twemproxy_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/udp_listener/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/udp_listener/udp_listener.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/udp_listener/udp_listener_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/unbound/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/unbound/unbound.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/unbound/unbound_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/varnish/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/varnish/varnish.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/varnish/varnish_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/varnish/varnish_windows.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/vsphere/METRICS.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/vsphere/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/vsphere/client.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/vsphere/endpoint.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/vsphere/selfhealth.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/vsphere/throttled_exec.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/vsphere/tscache.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/vsphere/vsphere.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/vsphere/vsphere_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/webhooks/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/webhooks/filestack/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/webhooks/filestack/filestack_webhooks.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/webhooks/filestack/filestack_webhooks_events.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/webhooks/filestack/filestack_webhooks_events_json_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/webhooks/filestack/filestack_webhooks_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/webhooks/github/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/webhooks/github/github_webhooks.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/webhooks/github/github_webhooks_mock_json.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/webhooks/github/github_webhooks_models.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/webhooks/github/github_webhooks_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/webhooks/mandrill/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/webhooks/mandrill/mandrill_webhooks.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/webhooks/mandrill/mandrill_webhooks_events.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/webhooks/mandrill/mandrill_webhooks_events_json_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/webhooks/mandrill/mandrill_webhooks_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/webhooks/papertrail/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/webhooks/papertrail/papertrail_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/webhooks/papertrail/papertrail_webhooks.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/webhooks/papertrail/papertrail_webhooks_models.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/webhooks/particle/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/webhooks/particle/particle_webhooks.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/webhooks/particle/particle_webhooks_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/webhooks/rollbar/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/webhooks/rollbar/rollbar_webhooks.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/webhooks/rollbar/rollbar_webhooks_events.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/webhooks/rollbar/rollbar_webhooks_events_json_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/webhooks/rollbar/rollbar_webhooks_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/webhooks/webhooks.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/webhooks/webhooks_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/win_perf_counters/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/win_perf_counters/kernel32.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/win_perf_counters/pdh.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/win_perf_counters/pdh_386.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/win_perf_counters/pdh_amd64.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/win_perf_counters/performance_query.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/win_perf_counters/win_perf_counters.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/win_perf_counters/win_perf_counters_integration_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/win_perf_counters/win_perf_counters_notwindows.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/win_perf_counters/win_perf_counters_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/win_services/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/win_services/win_services.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/win_services/win_services_integration_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/win_services/win_services_notwindows.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/win_services/win_services_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/wireless/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/wireless/wireless.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/wireless/wireless_linux.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/wireless/wireless_nonlinux.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/wireless/wireless_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/x509_cert/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/x509_cert/dev/telegraf.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/x509_cert/x509_cert.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/x509_cert/x509_cert_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/zfs/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/zfs/zfs.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/zfs/zfs_freebsd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/zfs/zfs_freebsd_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/zfs/zfs_linux.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/zfs/zfs_linux_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/zfs/zfs_other.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/zipkin/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/zipkin/cmd/stress_test_write/stress_test_write.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/zipkin/cmd/thrift_serialize/thrift_serialize.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/zipkin/codec/codec.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/zipkin/codec/codec_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/zipkin/codec/jsonV1/jsonV1.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/zipkin/codec/jsonV1/jsonV1_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/zipkin/codec/thrift/thrift.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/zipkin/codec/thrift/thrift_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/zipkin/convert.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/zipkin/convert_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/zipkin/handler.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/zipkin/handler_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/zipkin/testdata/cli_microservice.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/zipkin/testdata/distributed_trace_sample.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/zipkin/testdata/json/brave-tracer-example.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/zipkin/testdata/json/cli_microservice.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/zipkin/testdata/json/distributed_trace_sample.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/zipkin/testdata/json/threespans.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/zipkin/testdata/threespans.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/zipkin/trace/trace.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/zipkin/zipkin.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/zipkin/zipkin_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/zookeeper/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/zookeeper/dev/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/zookeeper/dev/telegraf.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/zookeeper/zookeeper.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/inputs/zookeeper/zookeeper_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/all/all.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/amon/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/amon/amon.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/amon/amon_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/amqp/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/amqp/amqp.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/amqp/amqp_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/amqp/client.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/application_insights/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/application_insights/application_insights.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/application_insights/application_insights_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/application_insights/diagnostic_message_subscriber.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/application_insights/mocks/diagnostics_message_listener.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/application_insights/mocks/diagnostics_message_subscriber.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/application_insights/mocks/transmitter.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/application_insights/transmitter.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/azure_monitor/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/azure_monitor/azure_monitor.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/azure_monitor/azure_monitor_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/cloudwatch/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/cloudwatch/cloudwatch.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/cloudwatch/cloudwatch_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/cratedb/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/cratedb/cratedb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/cratedb/cratedb_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/datadog/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/datadog/datadog.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/datadog/datadog_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/discard/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/discard/discard.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/elasticsearch/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/elasticsearch/elasticsearch.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/elasticsearch/elasticsearch_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/file/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/file/file.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/file/file_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/graphite/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/graphite/graphite.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/graphite/graphite_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/graylog/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/graylog/graylog.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/graylog/graylog_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/http/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/http/http.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/http/http_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/influxdb/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/influxdb/http.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/influxdb/http_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/influxdb/influxdb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/influxdb/influxdb_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/influxdb/udp.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/influxdb/udp_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/influxdb_v2/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/influxdb_v2/http.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/influxdb_v2/http_internal_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/influxdb_v2/http_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/influxdb_v2/influxdb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/influxdb_v2/influxdb_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/instrumental/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/instrumental/instrumental.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/instrumental/instrumental_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/kafka/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/kafka/kafka.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/kafka/kafka_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/kinesis/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/kinesis/kinesis.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/kinesis/kinesis_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/librato/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/librato/librato.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/librato/librato_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/mqtt/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/mqtt/mqtt.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/mqtt/mqtt_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/nats/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/nats/nats.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/nats/nats_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/nsq/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/nsq/nsq.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/nsq/nsq_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/opentsdb/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/opentsdb/opentsdb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/opentsdb/opentsdb_http.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/opentsdb/opentsdb_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/prometheus_client/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/prometheus_client/prometheus_client.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/prometheus_client/prometheus_client_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/registry.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/riemann/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/riemann/riemann.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/riemann/riemann_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/riemann_legacy/riemann.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/riemann_legacy/riemann_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/socket_writer/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/socket_writer/socket_writer.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/socket_writer/socket_writer_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/stackdriver/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/stackdriver/stackdriver.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/stackdriver/stackdriver_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/wavefront/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/wavefront/wavefront.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/outputs/wavefront/wavefront_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/parsers/EXAMPLE_README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/parsers/collectd/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/parsers/collectd/parser.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/parsers/collectd/parser_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/parsers/csv/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/parsers/csv/parser.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/parsers/csv/parser_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/parsers/dropwizard/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/parsers/dropwizard/parser.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/parsers/dropwizard/parser_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/parsers/graphite/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/parsers/graphite/config.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/parsers/graphite/errors.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/parsers/graphite/parser.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/parsers/graphite/parser_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/parsers/grok/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/parsers/grok/influx_patterns.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/parsers/grok/parser.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/parsers/grok/parser_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/parsers/grok/testdata/test-patterns" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/parsers/grok/testdata/test_a.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/parsers/grok/testdata/test_b.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/parsers/influx/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/parsers/influx/escape.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/parsers/influx/handler.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/parsers/influx/machine.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/parsers/influx/machine.go.rl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/parsers/influx/machine_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/parsers/influx/parser.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/parsers/influx/parser_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/parsers/json/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/parsers/json/parser.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/parsers/json/parser_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/parsers/logfmt/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/parsers/logfmt/parser.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/parsers/logfmt/parser_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/parsers/nagios/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/parsers/nagios/parser.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/parsers/nagios/parser_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/parsers/registry.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/parsers/value/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/parsers/value/parser.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/parsers/value/parser_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/parsers/wavefront/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/parsers/wavefront/element.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/parsers/wavefront/parser.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/parsers/wavefront/parser_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/parsers/wavefront/scanner.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/parsers/wavefront/token.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/processors/all/all.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/processors/converter/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/processors/converter/converter.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/processors/converter/converter_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/processors/enum/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/processors/enum/enum.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/processors/enum/enum_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/processors/override/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/processors/override/override.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/processors/override/override_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/processors/parser/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/processors/parser/parser.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/processors/parser/parser_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/processors/printer/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/processors/printer/printer.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/processors/printer/printer_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/processors/regex/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/processors/regex/regex.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/processors/regex/regex_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/processors/registry.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/processors/rename/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/processors/rename/rename.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/processors/rename/rename_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/processors/strings/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/processors/strings/strings.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/processors/strings/strings_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/processors/topk/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/processors/topk/test_sets.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/processors/topk/topk.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/processors/topk/topk_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/serializers/EXAMPLE_README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/serializers/graphite/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/serializers/graphite/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/serializers/graphite/graphite.go" beforeDir="false" afterPath="$PROJECT_DIR$/serializers/graphite/graphite.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/serializers/graphite/graphite_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/serializers/graphite/graphite_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/serializers/influx/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/serializers/influx/escape.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/serializers/influx/influx.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/serializers/influx/influx_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/serializers/influx/reader.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/serializers/influx/reader_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/serializers/json/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/serializers/json/json.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/serializers/json/json_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/serializers/registry.go" beforeDir="false" afterPath="$PROJECT_DIR$/serializers/registry.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/serializers/splunkmetric/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/serializers/splunkmetric/splunkmetric.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/serializers/splunkmetric/splunkmetric_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/processor.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/alpine.docker" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/build.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/ci-1.10.docker" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/ci-1.11.docker" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/ci-1.9.docker" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/docker-entrypoint.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/init.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/post-install.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/post-remove.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/pre-install.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/pre-remove.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/stretch.docker" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/telegraf.service" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/selfstat/selfstat.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/selfstat/selfstat_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/selfstat/stat.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/selfstat/timingStat.go" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/go.mod">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="56">
+              <caret line="4" column="27" lean-forward="true" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/go.sum">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="GOROOT" path="/opt/local/lib/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/outputs/graphite/graphite.go" />
+        <option value="$PROJECT_DIR$/serializers/registry.go" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="width" value="834" />
+    <option name="height" value="1050" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="telegraf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="telegraf" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24969475" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Mongo Explorer" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/logger/logger.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+          <folding>
+            <element signature="e#16#94#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/internal/internal.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/internal/tls/config_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="13" column="32" lean-forward="true" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+          <folding>
+            <element signature="e#18#210#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/internal/tls/config.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-792">
+          <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serializers/registry.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="896">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
+          <folding>
+            <element signature="e#21#332#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/outputs/registry.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/metric/metric_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="e#16#157#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/metric/metric.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="e#16#96#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/metric/builder.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/outputs/graphite/graphite.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/outputs/graphite/graphite_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/input.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appveyor.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="24" column="58" lean-forward="true" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gopkg.toml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="197" column="33" lean-forward="true" selection-start-line="197" selection-start-column="33" selection-end-line="197" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitattributes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="16" column="40" lean-forward="true" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/metric.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#18#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accumulator.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="24" column="38" lean-forward="true" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/metric/tracking.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="40" lean-forward="true" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+          <folding>
+            <element signature="e#16#94#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go.mod">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="4" column="27" lean-forward="true" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go.sum">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+  </component>
+</project>
